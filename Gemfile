@@ -71,3 +71,6 @@ gem 'jquery-turbolinks'
 
 
 gem "aws-sdk-s3"#, require: false
+
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+gem 'mime-types'

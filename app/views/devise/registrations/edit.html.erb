@@ -17,7 +17,6 @@
         <%= f.file_field :header_image, class: 'form-control' %>
       </div>
   <% end %>
-  
 
   <div class="form-group">
     <%= f.label :name %>
@@ -30,6 +29,11 @@
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <span class="label label-info">Currently waiting confirmation for: <%= resource.unconfirmed_email %></span>
     <% end %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_field :description, class: 'form-control' %>
   </div>
 
   <div class="form-group">
