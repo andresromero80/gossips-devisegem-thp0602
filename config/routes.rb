@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/missions/:mission_id', to: 'missions#show'
   devise_for :users
   root to: 'static_pages#home'
 

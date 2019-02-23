@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  theme: MyString
+  program: MyText
+  context: MyText
+  objectif: MyText
+  description: MyText
+  partner: MyText
+  start: MyString
+  end: MyString
+  duration: MyString
+  frequence: MyString
+  public: MyText
+  numpeople: MyText
+  type: MyText
+  finance: MyText
+  evaluation: MyText
+  sector: MyString
+  geolevel: MyString
+  commune: MyString
+  deplevel: MyString
+  plan: MyText
+
+two:
+  theme: MyString
+  program: MyText
+  context: MyText
+  objectif: MyText
+  description: MyText
+  partner: MyText
+  start: MyString
+  end: MyString
+  duration: MyString
+  frequence: MyString
+  public: MyText
+  numpeople: MyText
+  type: MyText
+  finance: MyText
+  evaluation: MyText
+  sector: MyString
+  geolevel: MyString
+  commune: MyString
+  deplevel: MyString
+  plan: MyText

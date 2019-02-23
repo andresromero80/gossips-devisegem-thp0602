@@ -11,7 +11,9 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-gem 'bootstrap-sass', '3.3.7'
+# gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap', '~> 4.3.1'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 gem 'jquery-rails'
 
