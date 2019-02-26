@@ -5,5 +5,6 @@ class StaticPagesController < ApplicationController
 
 	  def secret
 	  	@users = User.all
+	  	@missions = Mission.all
 	  end 
 end

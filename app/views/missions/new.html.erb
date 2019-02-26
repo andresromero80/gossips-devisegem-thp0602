@@ -1,0 +1,148 @@
+<h1 class="text-center">Nouvelle fiche de projet</h1>
+
+
+<%= form_for @mission, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+	<!-- Title -->
+	<div class="form-group row">
+	  <%= f.label :title, 'Nom de projet', class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :title, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- theme -->
+	<div class="form-group row">
+	  <%= f.label :theme, 'Thème', class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :theme, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- program -->
+	<div class="form-group row">
+	  <%= f.label :program, 'Programmes', class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :program, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- context -->
+	<div class="form-group row">
+	  <%= f.label :context, 'Contexte', class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :context, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- objective -->
+	<div class="form-group row">
+	  <%= f.label :objectif, "Objectif de l'action", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :objectif, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- description -->
+	<div class="form-group row">
+	  <%= f.label :description, "Description", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_area :description, class:'form-control', rows:"3" %>
+	  </div>
+	</div>
+	<!-- partner -->
+	<div class="form-group row">
+	  <%= f.label :partner, "Partenaire d'action", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :partner, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- start -->
+	<div class="form-group row">
+	  <%= f.label :start, "Année de début de réalisation", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :start, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- end -->
+	<div class="form-group row">
+	  <%= f.label :end, "Année de fin de réalisation", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :end, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- frequence -->
+	<div class="form-group row">
+	  <%= f.label :frequence, "Fréquence", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :frequence, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- public -->
+	<div class="form-group row">
+	  <%= f.label :public, "Public", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :public, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- numpeople -->
+	<div class="form-group row">
+	  <%= f.label :numpeople, "Nombre de personnes concernées", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :numpeople, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- type -->
+	<div class="form-group row">
+	  <%= f.label :type, "Type d'action", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :type, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- finance -->
+	<div class="form-group row">
+	  <%= f.label :finance, "Financeur", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :finance, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- evaluation -->
+	<div class="form-group row">
+	  <%= f.label :evaluation, "Evaluation de l'action", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :evaluation, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- sector -->
+	<div class="form-group row">
+	  <%= f.label :sector, "Secteur d'activité", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :sector, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- geolevel -->
+	<div class="form-group row">
+	  <%= f.label :geolevel, "Niveau géographique", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :geolevel, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- commune -->
+	<div class="form-group row">
+	  <%= f.label :commune, "Commune", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :commune, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- deplevel -->
+	<div class="form-group row">
+	  <%= f.label :deplevel, "Niveau départemental", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :deplevel, class:'form-control' %>
+	  </div>
+	</div>
+	<!-- plan -->
+	<div class="form-group row">
+	  <%= f.label :plan, "Plan national", class: 'col-sm-2 col-form-label' %>
+	  <div class="col-sm-10">
+		  <%= f.text_field :plan, class:'form-control' %>
+	  </div>
+	</div>
+	<div class="form-group row">
+	  <%= f.submit "Enregistrer", class: "btn btn-primary" %>
+	</div>  
+<% end %>

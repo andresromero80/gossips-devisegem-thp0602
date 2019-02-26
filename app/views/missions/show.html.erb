@@ -1,7 +1,7 @@
-<h1>Missions#show</h1>
-<p>Find me in app/views/missions/show.html.erb</p>
+<h1 class="text-center"><%= @mission.title %></h1>
+<p class="text-center"><%=@users.find(@mission.user_id).name %></p>
 
-<div class="card">
+<!-- <div class="card">
   <div class="card-header">
     <h3><%= @mission.title %></h3>
   </div>
@@ -11,4 +11,15 @@
       <footer class="blockquote-footer"> by: <%= @mission.user_id %> <cite title="Source Title">on <%= @mission.created_at %></cite></footer>
     </blockquote>
   </div>
-</div>
+</div> -->
+
+<table class="table">
+  <tbody>
+	  <% @mission.attributes.each do |key,value| %>	
+	    <tr>
+	      <th scope="row"><%= key %></th>
+	      <td><%= value %></td>
+	    </tr>
+	  <% end %>   
+  </tbody> 
+</table>
