@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2019_02_22_095926) do
     t.string "frequence"
     t.text "public"
     t.text "numpeople"
-    t.text "type"
+    t.text "type_action"
     t.text "finance"
     t.text "evaluation"
     t.string "sector"

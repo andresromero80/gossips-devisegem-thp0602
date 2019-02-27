@@ -14,7 +14,7 @@ class CreateMissions < ActiveRecord::Migration[5.2]
       t.string :frequence
       t.text :public
       t.text :numpeople
-      t.text :type
+      t.text :type_action
       t.text :finance
       t.text :evaluation
       t.string :sector
