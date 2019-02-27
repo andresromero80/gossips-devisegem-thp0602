@@ -30,6 +30,7 @@ class MissionsController < ApplicationController
   end 
 
   def show
+    @info = {"theme" => "Thème", "program" => "Programmes", "context" => "Contexte", "objectif" => "Objectif de l'action", "description" => "Description", "partner" => "Partenaire d'action", "start" => "Année de début de réalisation", "end" => "Année de fin de réalisation", "duration" => "Durée", "frequence" => "Fréquence", "public" => "Public", "numpeople" => "Nombre de personnes concernées", "type" => "Type d'action", "finance" => "Financeur", "evaluation" => "Evaluation de l'action", "sector" => "Secteur d'activité", "geolevel" => "Niveau géographique", "commune" => "Commune", "deplevel" => "Niveau départemental", "plan" => "Plan national"}
   	@mission = Mission.find(params[:id])
     @users = User.all
   end
@@ -50,6 +51,12 @@ class MissionsController < ApplicationController
     @mission.update(mission_params)
     redirect_to missions_path
   end
+
+  def destroy
+    @mission = Mission.find(params[:id])
+    @mission.destroy
+    redirect_to missions_path
+  end 
 
     private
 

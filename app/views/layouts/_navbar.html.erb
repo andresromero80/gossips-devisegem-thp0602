@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <%= link_to 'St. Brieuc Project', root_path, class: 'navbar-brand' %>
+  <%= link_to 'Projet St. Brieuc', root_path, class: 'navbar-brand' %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,11 +7,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <%= link_to 'Home', root_path, class: 'nav-link' %>
+        <%= link_to 'Accueil', root_path, class: 'nav-link' %>
         <span class="sr-only">(current)</span>
       </li>
       <li class="nav-item">
-        <%= link_to 'Community', secret_path, class: 'nav-link' %>
+        <%= link_to 'Base de données', secret_path, class: 'nav-link' %>
       </li>
     </ul>
     <ul class="navbar-nav pull-right">
@@ -21,11 +21,11 @@
             <%= current_user.name %>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to 'Edit Profile', edit_user_registration_path, class: 'dropdown-item'  %>
-            <%= link_to 'New Mission', new_mission_path, class: 'dropdown-item'  %>
-            <%= link_to 'My Missions', missions_path, class: 'dropdown-item'  %>
+            <%= link_to 'Modifier mon profil', edit_user_registration_path, class: 'dropdown-item'  %>
+            <%= link_to 'Soumettre une action', new_mission_path, class: 'dropdown-item'  %>
+            <%= link_to 'Mes actions', missions_path, class: 'dropdown-item'  %>
             <div class="dropdown-divider"></div>
-            <%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+            <%= link_to 'Déconnexion', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
             <!-- <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
@@ -34,10 +34,7 @@
         </li>
       <% else %>
         <li class="nav-item">
-          <%= link_to 'Log In', new_user_session_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
+          <%= link_to 'Se connecter', new_user_session_path, class: 'nav-link' %>
         </li>
       <% end %>  
     </ul>

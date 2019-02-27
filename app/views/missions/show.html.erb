@@ -16,10 +16,12 @@
 <table class="table">
   <tbody>
 	  <% @mission.attributes.each do |key,value| %>	
-	    <tr>
-	      <th scope="row"><%= key %></th>
-	      <td><%= value %></td>
-	    </tr>
+  	   <% if @info[key] %>  
+        <tr>
+  	      <th scope="row"><%= @info[key] %></th>
+  	      <td><%= value %></td>
+  	    </tr>
+       <% end %> 
 	  <% end %>   
   </tbody> 
 </table>
